@@ -1,0 +1,398 @@
+[
+  {
+    "id": 1,
+    "name": "TELEVISION",
+    "facts": [
+      "It was coined in 1900 by Russian scientist Constantin Perskyi.",
+      "In 1884, Paul Gottlieb Nipkow of Germany, developed the first mechanical ...",
+      "Dreams were primarily black and white due to the effect and much exposure to black and white.",
+      "This device was surprisingly created before the radio.",
+      "Americans annually watch around 250 billion hours of ..."
+    ]
+  },
+  {
+    "id": 2,
+    "name": "LIGHTNING",
+    "facts": [
+      "Around the world, this occurs 3,000,000 times a day",
+      "Until the late 18th century it was believed that ringing church bells repelled it",
+      "Lake Maracaibo in Venezuela is the place on Earth that receives the most",
+      "There recorded speed travels at a gentle 270,000 mph.",
+      "When it strikes sand, it fuses together the grains to create fulgurite."
+    ]
+  },
+  {
+    "id": 3,
+    "name": "BALLET",
+    "facts": [
+      "It began in France in 1661",
+      "The first to do this were all men!",
+      "This performance tells a story without words",
+      "The word originates from the Greek word “ballizo”",
+      "The performers put rosin on their pointe shoes to prevent slipping"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "AVOCADO",
+    "facts": [
+      "They have been used dating back to as early as 5000 BC in Central and South America",
+      "Over 70 million lbs. of these are consumed on Super Bowl Sunday.",
+      "The skin and pit can be harmful, and even toxic, to cats and dogs.",
+      "They don't ripen until they are picked from a tree.",
+      "They are a type of berry, not vegetables, of which some people believe"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "CHOCOLATE",
+    "facts": [
+      "Benjamin Franklin sold it in his print shop in Philadelphia",
+      "The word comes from the Aztec word xocoatl,",
+      "The Aztecs also interstingly used this as their currency",
+      "This device was surprisingly created before the radio",
+      "It takes 400 Cocoa Beans to produce one pound of this"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "TOOTHBRUSH",
+    "facts": [
+      "It was invented in China during the Tang Dynasty (619-907)",
+      "The world's most expensive costs US$4,000. It's made of titanium ",
+      "The average person spends a total of 38.5 days of their life using this",
+      "The ancient Egyptians used twigs and leaves instead of this",
+      "One in ten people admit they regularly forget to brush their teeth."
+    ]
+  },
+  {
+    "id": 7,
+    "name": "LANTERN",
+    "facts": [
+      "They were originally made of metal and paper in ancient China and Japan.",
+      "They are symbols of hope, guidance, and celebration in many cultures.",
+      "People carried them in medieval times to navigate dark streets.",
+      "Modern ones use LEDs, making them safer and more energy-efficient.",
+      "The word 'lantern' comes from the Latin 'lanterna', meaning lamp or torch."
+    ]
+  },
+  {
+    "id": 8,
+    "name": "BALLOON",
+    "facts": [
+      "Originally made from animal bladders, rubber versions emerged in the 19th century.",
+      "They are often used in science to measure atmospheric conditions.",
+      "In some cultures, releasing them is a symbol of letting go.",
+      "They are now commonly made from latex or foil for durability.",
+      "Helium-filled versions float because helium is lighter than air."
+    ]
+  },
+  {
+    "id": 9,
+    "name": "LUGGAGE",
+    "facts": [
+      "It was traditionally made of wood and leather for durability.",
+      "Wheeled versions were introduced in the 1970s, revolutionizing travel.",
+      "It can range from hard-shell cases to soft, expandable fabric types.",
+      "Modern models often include locks, compartments, and charging ports.",
+      "It is designed to protect belongings and organize items for transport."
+    ]
+  },
+  {
+    "id": 10,
+    "name": "BATTERY",
+    "facts": [
+      "The first version was created by Italian scientist Alessandro Volta in 1800.",
+      "Some types can be recharged over 1,000 times before wearing out.",
+      "They rely on chemical reactions to generate an electric current.",
+      "A few types contain lithium, making them lightweight and long-lasting.",
+      "Recycling programs exist for old ones to reduce toxic waste."
+    ]
+  },
+  {
+    "id": 11,
+    "name": "BLENDER",
+    "facts": [
+      "The first one was invented in 1922 by a Polish-American named Stephen Poplawski.",
+      "Some models can spin at speeds over 30,000 RPM.",
+      "Specialized versions are used to mix industrial products like paint.",
+      "High-power models can heat soups just by blending them at high speeds.",
+      "They are popular in labs for creating chemical solutions."
+    ]
+  },
+  {
+    "id": 12,
+    "name": "FOSSILS",
+    "facts": [
+      "Some types are so delicate they are only visible under a microscope.",
+      "They can form from animals, plants, or even microorganisms like algae.",
+      "Petrification is one process by which organic material turns into stone.",
+      "They are often found in sedimentary rock layers and dated using carbon dating.",
+      "They are preserved remains of ancient life forms."
+    ]
+  },
+  {
+    "id": 13,
+    "name": "PILLOWS",
+    "facts": [
+      "In ancient Mesopotamia, only the wealthy used them, made from stone.",
+      "Specialized ones can be designed to support different sleeping postures.",
+      "Feathers, memory foam, and polyester are common filling materials.",
+      "Some types are infused with lavender for a calming sleep effect.",
+      "They are used for head support while sleeping."
+    ]
+  },
+  {
+    "id": 14,
+    "name": "TROUSERS",
+    "facts": [
+        "In the 19th century, women who wore them were considered rebellious.",
+        "They became common women's clothing during World War II.",
+        "Many designs include pockets, although some are purely decorative.",
+        "They can be made from materials like denim, cotton, and wool.",
+        "They are worn on the legs and commonly referred to as pants."
+    ]
+},
+  {
+    "id": 15,
+    "name": "TAPESTRY",
+    "facts": [
+        "They often tell stories, with famous ones depicting battles or legends.",
+        "Medieval versions were used to insulate stone walls and provide warmth.",
+        "They are handwoven on a loom, a process that can take years.",
+        "Some are hung as decorative wall art in homes and museums.",
+        "They are textile art pieces made by weaving colored threads."
+    ]
+},
+  {
+    "id": 16,
+    "name": "BINOCULARS",
+    "facts": [
+        "The design was influenced by opera glasses, used in 19th-century theaters.",
+        "They can be waterproof for use in marine environments or hiking.",
+        "Adjustable focus allows users to see distant objects clearly.",
+        "They are commonly used by birdwatchers, hunters, and sports fans.",
+        "They help magnify distant objects, making them appear closer."
+    ]
+},
+  {
+    "id": 17,
+    "name": "MICROWAVE",
+    "facts": [
+        "The first commercial version weighed over 700 pounds and was water-cooled.",
+        "They work by vibrating water molecules in food, creating heat.",
+        "Some models include convection settings for baking or crisping.",
+        "They are a common feature in kitchens for quickly heating meals.",
+        "They are appliances that use electromagnetic waves to heat food."
+    ]
+},
+  {
+    "id": 18,
+    "name": "MICROSCOPE",
+    "facts": [
+        "The first compound version was developed in the 17th century by Zacharias Janssen.",
+        "In the 19th century, it was integral in advancing the field of biology.",
+        "Some modern versions use lasers to create sharper images of tiny objects.",
+        "They are crucial in medical labs for diagnosing diseases at the cellular level.",
+        "They are optical instruments used to magnify small objects or organisms."
+    ]
+},
+  {
+    "id": 19,
+   "name": "HANDKERCHIF",
+    "facts": [
+        "In many ancient cultures, this item was originally made from luxurious materials such as silk",
+        "In 14th-century Europe, they were considered a symbol of status, often elaborately decorated.",
+        "In some cultures, it became a fashion accessory, especially among the aristocracy.",
+        "Modern versions are often used for hygiene, and are commonly made from cotton or linen.",
+        "A small piece of cloth used for personal hygiene or as a decorative accessory."
+    ]
+},
+  {
+    "id": 20,
+    "name": "FISHHOOKS",
+    "facts": [
+        "The earliest examples of this item date back over 23,000 years, found in ancient cultures.",
+        "In modern times, they are usually made from metal, sometimes with barbs for better grip.",
+        "This tool has evolved to suit various types of fishing, with designs specific to different fish.",
+        "They are often used in combination with bait to catch fish, especially in recreational fishing.",
+        "A sharp object used in fishing, designed to catch fish by hooking them in the mouth."
+    ]
+},
+{
+  "id": 21,
+  "name": "ELEPHANTS",
+  "facts": [
+      "The ancestors of these massive creatures date back 55 million years to the Eocene Epoch.",
+      "These animals are known for their intelligence, social structure, and complex communication.",
+      "They are the largest land mammals, with males growing to over 12 feet tall and weighing up to 6 tons.",
+      "Their trunks are highly versatile, used for drinking, picking up objects, and vocalizations.",
+      "The largest land animals, characterized by their trunks, tusks, and large ears."
+  ]
+},
+{
+  "id": 20,
+  "name": "FISHHOOKS",
+  "facts": [
+      "The earliest examples of this item date back over 23,000 years, found in ancient cultures.",
+      "This tool has evolved to suit various types of fishing, with designs specific to different fish.",
+      "In modern times, they are usually made from metal, sometimes with barbs for better grip.",
+      "They are often used in combination with bait to catch fish, especially in recreational fishing.",
+      "A sharp object used in fishing, designed to catch fish by hooking them in the mouth."
+  ]
+},
+{
+  "id": 21,
+  "name": "LAVENDER",
+  "facts": [
+      "Its flowers contain essential oils that have been prized for their calming effects.",
+      "Historically, it was believed to ward off evil spirits and purify the air in homes.",
+      "This plant has been used for thousands of years in perfumes, medicine, and cosmetics.",
+      "Today, it's commonly used in aromatherapy and as a natural remedy for anxiety.",
+      "A fragrant purple flower, often used in oils, perfumes, and healing remedies."
+  ]
+},
+{
+  "id": 22,
+  "name": "MUSKETEER",
+    "facts": [
+        "This historical figure was known for carrying a firearm, part of a specialized unit.",
+        "The term was popularized in 17th-century France, particularly in military contexts.",
+        "These soldiers were often part of the king's guard, skilled in combat and warfare.",
+        "Their signature weapon was a musket, a firearm used during the Age of Firearms.",
+        "A soldier equipped with a musket, often part of a royal army or military elite."
+    ]
+},
+{
+  "id": 23,
+  "name": "CURRENCY",
+  "facts": [
+      "The first metal coins were minted in Lydia around 600 BCE, initiating widespread use.",
+      "Historically, shells and precious metals were used as a form of exchange",
+      "Today, it includes both physical money and digital representations like banknotes and coins.",
+      "The introduction of paper money began in China during the Tang Dynasty in the 7th century.",
+      "A system of money in general use, particularly for trade and exchange of goods."
+  ]
+},
+{
+  "id": 24,
+  "name": "BOTTLE",
+  "facts": [
+      "This object was first made from clay and glass before being mass-produced in the 19th century.",
+      "Historically, it was used to hold liquids like wine, oil, and perfumes for storage.",
+      "The design of this object has evolved significantly over the centuries, now available in plastic and glass.",
+      "Today, it is used extensively for packaging beverages, especially water and soft drinks.",
+      "A container with a narrow neck used to hold liquids, typically made of glass or plastic."
+  ]
+},
+{
+  "id": 25,
+  "name": "PAPERCLIP",
+    "facts": [
+        "The first patent for this object was issued in 1899, although similar versions existed earlier.",
+        "In the early 20th century, its design was modified to make it more reliable and less likely to rust.",
+        "Today, it is a ubiquitous office supply used to bind sheets of paper together temporarily.",
+        "This simple item is often made from wire and is available in various sizes for different uses.",
+        "A small device made of metal used to hold sheets of paper together."
+    ]
+},
+{
+  "id": 26,
+  "name": "TOURNAMENT",
+    "facts": [
+        "In the Middle Ages, these events were often a display of knightly skills and combat.",
+        "They included jousting, sword fighting, and archery as ways to prove strength and skill.",
+        "The modern version began in the 19th century with organized sports like tennis and golf.",
+        "It typically involves multiple rounds, with competitors or teams advancing to finals.",
+        "A competitive event where participants compete in a series of games or challenges to determine a winner."
+    ]
+},
+{
+  "id": 20,
+  "name": "FISHHOOKS",
+  "facts": [
+      "The earliest examples of this item date back over 23,000 years, found in ancient cultures.",
+      "This tool has evolved to suit various types of fishing, with designs specific to different fish.",
+      "In modern times, they are usually made from metal, sometimes with barbs for better grip.",
+      "They are often used in combination with bait to catch fish, especially in recreational fishing.",
+      "A sharp object used in fishing, designed to catch fish by hooking them in the mouth."
+  ]
+},
+{
+  "id": 20,
+  "name": "FISHHOOKS",
+  "facts": [
+      "The earliest examples of this item date back over 23,000 years, found in ancient cultures.",
+      "This tool has evolved to suit various types of fishing, with designs specific to different fish.",
+      "In modern times, they are usually made from metal, sometimes with barbs for better grip.",
+      "They are often used in combination with bait to catch fish, especially in recreational fishing.",
+      "A sharp object used in fishing, designed to catch fish by hooking them in the mouth."
+  ]
+},
+{
+  "id": 20,
+  "name": "FISHHOOKS",
+  "facts": [
+      "The earliest examples of this item date back over 23,000 years, found in ancient cultures.",
+      "This tool has evolved to suit various types of fishing, with designs specific to different fish.",
+      "In modern times, they are usually made from metal, sometimes with barbs for better grip.",
+      "They are often used in combination with bait to catch fish, especially in recreational fishing.",
+      "A sharp object used in fishing, designed to catch fish by hooking them in the mouth."
+  ]
+},
+{
+  "id": 20,
+  "name": "FISHHOOKS",
+  "facts": [
+      "The earliest examples of this item date back over 23,000 years, found in ancient cultures.",
+      "This tool has evolved to suit various types of fishing, with designs specific to different fish.",
+      "In modern times, they are usually made from metal, sometimes with barbs for better grip.",
+      "They are often used in combination with bait to catch fish, especially in recreational fishing.",
+      "A sharp object used in fishing, designed to catch fish by hooking them in the mouth."
+  ]
+},
+{
+  "id": 20,
+  "name": "FISHHOOKS",
+  "facts": [
+      "The earliest examples of this item date back over 23,000 years, found in ancient cultures.",
+      "This tool has evolved to suit various types of fishing, with designs specific to different fish.",
+      "In modern times, they are usually made from metal, sometimes with barbs for better grip.",
+      "They are often used in combination with bait to catch fish, especially in recreational fishing.",
+      "A sharp object used in fishing, designed to catch fish by hooking them in the mouth."
+  ]
+},
+{
+  "id": 20,
+  "name": "FISHHOOKS",
+  "facts": [
+      "The earliest examples of this item date back over 23,000 years, found in ancient cultures.",
+      "This tool has evolved to suit various types of fishing, with designs specific to different fish.",
+      "In modern times, they are usually made from metal, sometimes with barbs for better grip.",
+      "They are often used in combination with bait to catch fish, especially in recreational fishing.",
+      "A sharp object used in fishing, designed to catch fish by hooking them in the mouth."
+  ]
+},
+{
+  "id": 20,
+  "name": "FISHHOOKS",
+  "facts": [
+      "The earliest examples of this item date back over 23,000 years, found in ancient cultures.",
+      "This tool has evolved to suit various types of fishing, with designs specific to different fish.",
+      "In modern times, they are usually made from metal, sometimes with barbs for better grip.",
+      "They are often used in combination with bait to catch fish, especially in recreational fishing.",
+      "A sharp object used in fishing, designed to catch fish by hooking them in the mouth."
+  ]
+},
+{
+  "id": 20,
+  "name": "FISHHOOKS",
+  "facts": [
+      "The earliest examples of this item date back over 23,000 years, found in ancient cultures.",
+      "This tool has evolved to suit various types of fishing, with designs specific to different fish.",
+      "In modern times, they are usually made from metal, sometimes with barbs for better grip.",
+      "They are often used in combination with bait to catch fish, especially in recreational fishing.",
+      "A sharp object used in fishing, designed to catch fish by hooking them in the mouth."
+  ]
+}
+]
