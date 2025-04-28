@@ -1,83 +1,39 @@
 [
   {
     "id": 1,
-    "name": "TELEVISION",
+    "name": "BALLET",
     "facts": [
-      "It was coined in 1900 by Russian scientist Constantin Perskyi.",
-      "In 1884, Paul Gottlieb Nipkow of Germany, developed the first mechanical ...",
-      "Dreams were primarily black and white due to the effect and much exposure to black and white.",
-      "This device was surprisingly created before the radio.",
-      "Americans annually watch around 250 billion hours of ..."
+      "First formal performances began at the French royal court in the year 1661.",
+      "Originally, all roles were danced by men wearing elaborate court attire.",
+      "Storytelling occurs entirely through movement, music, and facial expression.",
+      "The term derives from Greek “ballizo,” meaning “to dance” or “to leap about.”",
+      "Dancers apply rosin to their shoes’ soles for better grip on the slippery floor."
     ]
   },
   {
     "id": 2,
-    "name": "LIGHTNING",
+    "name": "AVOCADO",
     "facts": [
-      "Around the world, this occurs 3,000,000 times a day",
-      "Until the late 18th century it was believed that ringing church bells repelled it",
-      "Lake Maracaibo in Venezuela is the place on Earth that receives the most",
-      "There recorded speed travels at a gentle 270,000 mph.",
-      "When it strikes sand, it fuses together the grains to create fulgurite."
+      "They have been used dating back to as early as 5000 BC in Central and South America.",
+      "Over 70 million lbs. of these are consumed on Super Bowl Sunday.",
+      "The skin and pit can be harmful, and even toxic, to cats and dogs.",
+      "They don't ripen until they are picked from a tree.",
+      "They are a type of berry, not vegetables, of which some people believe."
     ]
   },
   {
     "id": 3,
-    "name": "BALLET",
-    "facts": [
-      "It began in France in 1661",
-      "The first to do this were all men!",
-      "This performance tells a story without words",
-      "The word originates from the Greek word “ballizo”",
-      "The performers put rosin on their pointe shoes to prevent slipping"
-    ]
-  },
-  {
-    "id": 4,
-    "name": "AVOCADO",
-    "facts": [
-      "They have been used dating back to as early as 5000 BC in Central and South America",
-      "Over 70 million lbs. of these are consumed on Super Bowl Sunday.",
-      "The skin and pit can be harmful, and even toxic, to cats and dogs.",
-      "They don't ripen until they are picked from a tree.",
-      "They are a type of berry, not vegetables, of which some people believe"
-    ]
-  },
-  {
-    "id": 5,
-    "name": "CHOCOLATE",
-    "facts": [
-      "Benjamin Franklin sold it in his print shop in Philadelphia",
-      "The word comes from the Aztec word xocoatl,",
-      "The Aztecs also interstingly used this as their currency",
-      "This device was surprisingly created before the radio",
-      "It takes 400 Cocoa Beans to produce one pound of this"
-    ]
-  },
-  {
-    "id": 6,
     "name": "TOOTHBRUSH",
     "facts": [
-      "It was invented in China during the Tang Dynasty (619-907)",
-      "The world's most expensive costs US$4,000. It's made of titanium ",
-      "The average person spends a total of 38.5 days of their life using this",
-      "The ancient Egyptians used twigs and leaves instead of this",
+      "It was invented in China during the Tang Dynasty (619-907).",
+      "The world's most expensive costs US$4,000. It's made of titanium. ",
+      "The average person spends a total of 38.5 days of their life using this.",
+      "The ancient Egyptians used twigs and leaves instead of this.",
       "One in ten people admit they regularly forget to brush their teeth."
     ]
   },
   {
-    "id": 7,
-    "name": "LANTERN",
-    "facts": [
-      "They were originally made of metal and paper in ancient China and Japan.",
-      "They are symbols of hope, guidance, and celebration in many cultures.",
-      "People carried them in medieval times to navigate dark streets.",
-      "Modern ones use LEDs, making them safer and more energy-efficient.",
-      "The word 'lantern' comes from the Latin 'lanterna', meaning lamp or torch."
-    ]
-  },
-  {
-    "id": 8,
+    "id": 4,
     "name": "BALLOON",
     "facts": [
       "Originally made from animal bladders, rubber versions emerged in the 19th century.",
@@ -88,7 +44,7 @@
     ]
   },
   {
-    "id": 9,
+    "id": 5,
     "name": "LUGGAGE",
     "facts": [
       "It was traditionally made of wood and leather for durability.",
@@ -99,7 +55,7 @@
     ]
   },
   {
-    "id": 10,
+    "id": 6,
     "name": "BATTERY",
     "facts": [
       "The first version was created by Italian scientist Alessandro Volta in 1800.",
@@ -110,29 +66,7 @@
     ]
   },
   {
-    "id": 11,
-    "name": "BLENDER",
-    "facts": [
-      "The first one was invented in 1922 by a Polish-American named Stephen Poplawski.",
-      "Some models can spin at speeds over 30,000 RPM.",
-      "Specialized versions are used to mix industrial products like paint.",
-      "High-power models can heat soups just by blending them at high speeds.",
-      "They are popular in labs for creating chemical solutions."
-    ]
-  },
-  {
-    "id": 12,
-    "name": "FOSSILS",
-    "facts": [
-      "Some types are so delicate they are only visible under a microscope.",
-      "They can form from animals, plants, or even microorganisms like algae.",
-      "Petrification is one process by which organic material turns into stone.",
-      "They are often found in sedimentary rock layers and dated using carbon dating.",
-      "They are preserved remains of ancient life forms."
-    ]
-  },
-  {
-    "id": 13,
+    "id": 7,
     "name": "PILLOWS",
     "facts": [
       "In ancient Mesopotamia, only the wealthy used them, made from stone.",
@@ -143,256 +77,179 @@
     ]
   },
   {
-    "id": 14,
+    "id": 8,
     "name": "TROUSERS",
     "facts": [
-        "In the 19th century, women who wore them were considered rebellious.",
-        "They became common women's clothing during World War II.",
-        "Many designs include pockets, although some are purely decorative.",
-        "They can be made from materials like denim, cotton, and wool.",
-        "They are worn on the legs and commonly referred to as pants."
+      "In the 19th century, women who wore them were considered rebellious.",
+      "They became common women's clothing during World War II.",
+      "Many designs include pockets, although some are purely decorative.",
+      "They can be made from materials like denim, cotton, and wool.",
+      "They are worn on the legs and commonly referred to as pants."
     ]
-},
+  },
   {
-    "id": 15,
-    "name": "TAPESTRY",
+    "id": 9,
+    "name": "BOTTLE",
     "facts": [
-        "They often tell stories, with famous ones depicting battles or legends.",
-        "Medieval versions were used to insulate stone walls and provide warmth.",
-        "They are handwoven on a loom, a process that can take years.",
-        "Some are hung as decorative wall art in homes and museums.",
-        "They are textile art pieces made by weaving colored threads."
-    ]
-},
-  {
-    "id": 16,
-    "name": "BINOCULARS",
-    "facts": [
-        "The design was influenced by opera glasses, used in 19th-century theaters.",
-        "They can be waterproof for use in marine environments or hiking.",
-        "Adjustable focus allows users to see distant objects clearly.",
-        "They are commonly used by birdwatchers, hunters, and sports fans.",
-        "They help magnify distant objects, making them appear closer."
-    ]
-},
-  {
-    "id": 17,
-    "name": "MICROWAVE",
-    "facts": [
-        "The first commercial version weighed over 700 pounds and was water-cooled.",
-        "They work by vibrating water molecules in food, creating heat.",
-        "Some models include convection settings for baking or crisping.",
-        "They are a common feature in kitchens for quickly heating meals.",
-        "They are appliances that use electromagnetic waves to heat food."
-    ]
-},
-  {
-    "id": 18,
-    "name": "MICROSCOPE",
-    "facts": [
-        "The first compound version was developed in the 17th century by Zacharias Janssen.",
-        "In the 19th century, it was integral in advancing the field of biology.",
-        "Some modern versions use lasers to create sharper images of tiny objects.",
-        "They are crucial in medical labs for diagnosing diseases at the cellular level.",
-        "They are optical instruments used to magnify small objects or organisms."
-    ]
-},
-  {
-    "id": 19,
-   "name": "HANDKERCHIF",
-    "facts": [
-        "In many ancient cultures, this item was originally made from luxurious materials such as silk",
-        "In 14th-century Europe, they were considered a symbol of status, often elaborately decorated.",
-        "In some cultures, it became a fashion accessory, especially among the aristocracy.",
-        "Modern versions are often used for hygiene, and are commonly made from cotton or linen.",
-        "A small piece of cloth used for personal hygiene or as a decorative accessory."
-    ]
-},
-  {
-    "id": 20,
-    "name": "FISHHOOKS",
-    "facts": [
-        "The earliest examples of this item date back over 23,000 years, found in ancient cultures.",
-        "In modern times, they are usually made from metal, sometimes with barbs for better grip.",
-        "This tool has evolved to suit various types of fishing, with designs specific to different fish.",
-        "They are often used in combination with bait to catch fish, especially in recreational fishing.",
-        "A sharp object used in fishing, designed to catch fish by hooking them in the mouth."
-    ]
-},
-{
-  "id": 21,
-  "name": "ELEPHANTS",
-  "facts": [
-      "The ancestors of these massive creatures date back 55 million years to the Eocene Epoch.",
-      "These animals are known for their intelligence, social structure, and complex communication.",
-      "They are the largest land mammals, with males growing to over 12 feet tall and weighing up to 6 tons.",
-      "Their trunks are highly versatile, used for drinking, picking up objects, and vocalizations.",
-      "The largest land animals, characterized by their trunks, tusks, and large ears."
-  ]
-},
-{
-  "id": 20,
-  "name": "FISHHOOKS",
-  "facts": [
-      "The earliest examples of this item date back over 23,000 years, found in ancient cultures.",
-      "This tool has evolved to suit various types of fishing, with designs specific to different fish.",
-      "In modern times, they are usually made from metal, sometimes with barbs for better grip.",
-      "They are often used in combination with bait to catch fish, especially in recreational fishing.",
-      "A sharp object used in fishing, designed to catch fish by hooking them in the mouth."
-  ]
-},
-{
-  "id": 21,
-  "name": "LAVENDER",
-  "facts": [
-      "Its flowers contain essential oils that have been prized for their calming effects.",
-      "Historically, it was believed to ward off evil spirits and purify the air in homes.",
-      "This plant has been used for thousands of years in perfumes, medicine, and cosmetics.",
-      "Today, it's commonly used in aromatherapy and as a natural remedy for anxiety.",
-      "A fragrant purple flower, often used in oils, perfumes, and healing remedies."
-  ]
-},
-{
-  "id": 22,
-  "name": "MUSKETEER",
-    "facts": [
-        "This historical figure was known for carrying a firearm, part of a specialized unit.",
-        "The term was popularized in 17th-century France, particularly in military contexts.",
-        "These soldiers were often part of the king's guard, skilled in combat and warfare.",
-        "Their signature weapon was a musket, a firearm used during the Age of Firearms.",
-        "A soldier equipped with a musket, often part of a royal army or military elite."
-    ]
-},
-{
-  "id": 23,
-  "name": "CURRENCY",
-  "facts": [
-      "The first metal coins were minted in Lydia around 600 BCE, initiating widespread use.",
-      "Historically, shells and precious metals were used as a form of exchange",
-      "Today, it includes both physical money and digital representations like banknotes and coins.",
-      "The introduction of paper money began in China during the Tang Dynasty in the 7th century.",
-      "A system of money in general use, particularly for trade and exchange of goods."
-  ]
-},
-{
-  "id": 24,
-  "name": "BOTTLE",
-  "facts": [
       "This object was first made from clay and glass before being mass-produced in the 19th century.",
       "Historically, it was used to hold liquids like wine, oil, and perfumes for storage.",
       "The design of this object has evolved significantly over the centuries, now available in plastic and glass.",
       "Today, it is used extensively for packaging beverages, especially water and soft drinks.",
       "A container with a narrow neck used to hold liquids, typically made of glass or plastic."
-  ]
-},
-{
-  "id": 25,
-  "name": "PAPERCLIP",
-    "facts": [
-        "The first patent for this object was issued in 1899, although similar versions existed earlier.",
-        "In the early 20th century, its design was modified to make it more reliable and less likely to rust.",
-        "Today, it is a ubiquitous office supply used to bind sheets of paper together temporarily.",
-        "This simple item is often made from wire and is available in various sizes for different uses.",
-        "A small device made of metal used to hold sheets of paper together."
     ]
-},
-{
-  "id": 26,
-  "name": "TOURNAMENT",
+  },
+  {
+    "id": 10,
+    "name": "BASKET",
     "facts": [
-        "In the Middle Ages, these events were often a display of knightly skills and combat.",
-        "They included jousting, sword fighting, and archery as ways to prove strength and skill.",
-        "The modern version began in the 19th century with organized sports like tennis and golf.",
-        "It typically involves multiple rounds, with competitors or teams advancing to finals.",
-        "A competitive event where participants compete in a series of games or challenges to determine a winner."
+      "Used for carrying items, storing goods, or even playing games.",
+      "Handcrafted ones are common in many cultures.",
+      "Often woven from straw, fabric, or plastic.",
+      "Can be used to carry picnic food or Easter treats.",
+      "Some are hung from ceilings or handlebars."
     ]
-},
-{
-  "id": 20,
-  "name": "FISHHOOKS",
-  "facts": [
-      "The earliest examples of this item date back over 23,000 years, found in ancient cultures.",
-      "This tool has evolved to suit various types of fishing, with designs specific to different fish.",
-      "In modern times, they are usually made from metal, sometimes with barbs for better grip.",
-      "They are often used in combination with bait to catch fish, especially in recreational fishing.",
-      "A sharp object used in fishing, designed to catch fish by hooking them in the mouth."
-  ]
-},
-{
-  "id": 20,
-  "name": "FISHHOOKS",
-  "facts": [
-      "The earliest examples of this item date back over 23,000 years, found in ancient cultures.",
-      "This tool has evolved to suit various types of fishing, with designs specific to different fish.",
-      "In modern times, they are usually made from metal, sometimes with barbs for better grip.",
-      "They are often used in combination with bait to catch fish, especially in recreational fishing.",
-      "A sharp object used in fishing, designed to catch fish by hooking them in the mouth."
-  ]
-},
-{
-  "id": 20,
-  "name": "FISHHOOKS",
-  "facts": [
-      "The earliest examples of this item date back over 23,000 years, found in ancient cultures.",
-      "This tool has evolved to suit various types of fishing, with designs specific to different fish.",
-      "In modern times, they are usually made from metal, sometimes with barbs for better grip.",
-      "They are often used in combination with bait to catch fish, especially in recreational fishing.",
-      "A sharp object used in fishing, designed to catch fish by hooking them in the mouth."
-  ]
-},
-{
-  "id": 20,
-  "name": "FISHHOOKS",
-  "facts": [
-      "The earliest examples of this item date back over 23,000 years, found in ancient cultures.",
-      "This tool has evolved to suit various types of fishing, with designs specific to different fish.",
-      "In modern times, they are usually made from metal, sometimes with barbs for better grip.",
-      "They are often used in combination with bait to catch fish, especially in recreational fishing.",
-      "A sharp object used in fishing, designed to catch fish by hooking them in the mouth."
-  ]
-},
-{
-  "id": 20,
-  "name": "FISHHOOKS",
-  "facts": [
-      "The earliest examples of this item date back over 23,000 years, found in ancient cultures.",
-      "This tool has evolved to suit various types of fishing, with designs specific to different fish.",
-      "In modern times, they are usually made from metal, sometimes with barbs for better grip.",
-      "They are often used in combination with bait to catch fish, especially in recreational fishing.",
-      "A sharp object used in fishing, designed to catch fish by hooking them in the mouth."
-  ]
-},
-{
-  "id": 20,
-  "name": "FISHHOOKS",
-  "facts": [
-      "The earliest examples of this item date back over 23,000 years, found in ancient cultures.",
-      "This tool has evolved to suit various types of fishing, with designs specific to different fish.",
-      "In modern times, they are usually made from metal, sometimes with barbs for better grip.",
-      "They are often used in combination with bait to catch fish, especially in recreational fishing.",
-      "A sharp object used in fishing, designed to catch fish by hooking them in the mouth."
-  ]
-},
-{
-  "id": 20,
-  "name": "FISHHOOKS",
-  "facts": [
-      "The earliest examples of this item date back over 23,000 years, found in ancient cultures.",
-      "This tool has evolved to suit various types of fishing, with designs specific to different fish.",
-      "In modern times, they are usually made from metal, sometimes with barbs for better grip.",
-      "They are often used in combination with bait to catch fish, especially in recreational fishing.",
-      "A sharp object used in fishing, designed to catch fish by hooking them in the mouth."
-  ]
-},
-{
-  "id": 20,
-  "name": "FISHHOOKS",
-  "facts": [
-      "The earliest examples of this item date back over 23,000 years, found in ancient cultures.",
-      "This tool has evolved to suit various types of fishing, with designs specific to different fish.",
-      "In modern times, they are usually made from metal, sometimes with barbs for better grip.",
-      "They are often used in combination with bait to catch fish, especially in recreational fishing.",
-      "A sharp object used in fishing, designed to catch fish by hooking them in the mouth."
-  ]
-}
+  },
+  {
+    "id": 11,
+    "name": "ORCHID",
+    "facts": [
+      "Some species produce no chlorophyll and rely entirely on fungi.",
+      "The smallest blossoms can measure less than 2 millimeters across.",
+      "Certain types bloom only once every several years in the wild.",
+      "One genus uses a hinged lip to flick pollen onto visiting insects.",
+      "They belong to one of the largest families of flowering plants."
+    ]
+  },
+  {
+    "id": 12,
+    "name": "GALAXY",
+    "facts": [
+      "Its disk is about 100,000 light‑years in diameter overall.",
+      "Estimated to hold over 100 billion of its own stars.",
+      "Its spiral arms are sites of active star formation today.",
+      "Our local system spins at roughly 220 kilometers per second.",
+      "Contains a supermassive black hole at its very center."
+    ]
+  },
+  {
+    "id": 13,
+    "name": "SPHINX",
+    "facts": [
+      "A hidden chamber was rumored to exist beneath its base.",
+      "Erosion patterns suggest it may predate nearby monuments.",
+      "The original carved figure has a missing nose and beard pieces.",
+      "Its face is believed to represent a pharaoh from antiquity.",
+      "Lies in alignment with two major pyramids on the plateau."
+    ]
+  },
+  {
+    "id": 14,
+    "name": "PUPPET",
+    "facts": [
+      "Traditional types use rods or strings to articulate limbs and facial features.",
+      "Marionettes require complex control from above for lifelike movement effects.",
+      "Some cultures perform shadow versions by backlighting flat, jointed figures.",
+      "They fit over the operator’s hand to animate mouths and gestures.",
+      "Modern animatronics embed motors for autonomous, preprogrammed performances."
+    ]
+  },
+  {
+    "id": 15,
+    "name": "OASIS",
+    "facts": [
+      "Salt crusts may form around edges where evaporation exceeds water input.",
+      "Ancient trade routes often depended on them for caravan resupply stops.",
+      "Forms where underground water reaches the surface in arid regions.",
+      "Vegetation clusters around them, providing critical habitat for wildlife.",
+      "Some contain hot springs, creating microclimates distinct from surrounding deserts."
+    ]
+  },
+  {
+    "id": 16,
+    "name": "GIRAFFE",
+    "facts": [
+      "Their heels barely touch the ground when they walk, creating a rocking motion gait.",
+      "Patterns of spots are unique to each individual, much like human fingerprints.",
+      "Special valves prevent blood from rushing to the brain when bending down.",
+      "It had 7 neck vertebrae but they are greatly elongated in length.",
+      "Tongues can reach up to 45 centimeters and resist rough tree bark textures."
+    ]
+  },
+  {
+    "id": 17,
+    "name": "SALMON",
+    "facts": [
+      "Many populations undertake upstream migrations covering hundreds of kilometers.",
+      "Undergoes physiological changes enabling transition between salt and fresh water.",
+      "Spawns in freshwater streams after maturing at sea over several years’ time.",
+      "Flesh color derives from carotenoid pigments obtained through crustacean diets.",
+      "Popular for grilling and smoking due to its rich oil content and firm texture."
+    ]
+  },
+  {
+    "id": 18,
+    "name": "STATUE",
+    "facts": [
+      "Fixed in place yet meant to suggest power, memory, or an idealized form.",
+      "Often positioned prominently to gaze eternally over crowds or crossroads.",
+      "Historic upheavals often begin with either destruction or unveiling of one.",
+      "Chisel marks or casting flaws sometimes betray the human hand behind it.",
+      "Materials vary wildly, from fragile sands to enduring marbles and metals."
+    ]
+  },
+  {
+    "id": 19,
+    "name": "GOBLET",
+    "facts": [
+      "Stemmed vessel often used ceremonially or for special feasts.",
+      "Materials range from simple clay to gold-encrusted masterpieces.",
+      "Design encourages slower, savoring drinks during gatherings.",
+      "Linked in myths to quests and eternal youth legends.",
+      "Durability varies based on craft, time, and use rituals."
+    ]
+  },
+  {
+    "id": 20,
+    "name": "TEMPLE",
+    "facts": [
+      "Constructed as homes for deities, not merely meeting places.",
+      "Architectural splendor often reflected devotion and hierarchy.",
+      "Many became layered with ruins from successive civilizations.",
+      "Pilgrimage destinations often centered on these sites.",
+      "Rituals often controlled who could enter inner sanctuaries."
+    ]
+  },
+  {
+    "id": 21,
+    "name": "ZEBRAS",
+    "facts": [
+      "Often form alliances with wildebeests during migrations.",
+      "Communicate mood changes through ear and tail positions.",
+      "No two individuals share exactly the same pattern.",
+      "Can sleep standing up in close protective herds.",
+      "Black-and-white stripes may confuse chasing predators."
+    ]
+  },
+  {
+    "id": 22,
+    "name": "FRANCE",
+    "facts": [
+      "Home to one of the world's oldest cave paintings, dating 30,000 years back.",
+      "A revolution here led to widespread global changes in governance and rights.",
+      "This nation invented a popular flaky pastry enjoyed worldwide.",
+      "A famous museum here holds a painting known for its mysterious smile.",
+      "Hosts an annual bicycle race stretching over 2,000 miles each summer."
+    ]
+  },
+  {
+    "id": 23,
+    "name": "ROMANS",
+    "facts": [
+      "Their legal system became the foundation for many modern laws around the world.",
+      "They built complex roads and aqueducts that are still visible today.",
+      "Their empire spanned three continents at its peak, influencing many regions.",
+      "Their armies were known for their discipline and advanced tactics in battle.",
+      "Public entertainment like gladiator fights and chariot races were popular."
+    ]
+  }
 ]

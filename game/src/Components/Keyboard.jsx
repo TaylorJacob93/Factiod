@@ -1,20 +1,48 @@
 import React from "react";
+import "../styles/keyboard.css";
 
-function Keyboard({ handleKeyClick, handleDelete }) {
+function Keyboard({ handleKeyClick, handleDelete, keyboardFeedback = {} }) {
+  const row1 = "QWERTYUIOP".split("");
+  const row2 = "ASDFGHJKL".split("");
+  const row3 = "ZXCVBNM".split("");
+
   return (
     <div className="keyboard">
-      {[...Array(3)].map((_, rowIndex) => (
-        <div key={rowIndex} className="keyboard-row">
-          {[
-            "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M",
-            "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"
-          ].slice(rowIndex * 9, (rowIndex + 1) * 9).map((key) => (
-            <button key={key} className="key" onClick={() => handleKeyClick(key)}>{key}</button>
-          ))}
-        </div>
-      ))}
       <div className="keyboard-row">
-        <button className="key del-button" onClick={handleDelete}>DEL</button>
+        {row1.map((key) => (
+          <button
+            key={key}
+            className={`key ${keyboardFeedback[key] || ""}`}
+            onClick={() => handleKeyClick(key)}
+          >
+            {key}
+          </button>
+        ))}
+      </div>
+      <div className="keyboard-row">
+        {row2.map((key) => (
+          <button
+            key={key}
+            className={`key ${keyboardFeedback[key] || ""}`}
+            onClick={() => handleKeyClick(key)}
+          >
+            {key}
+          </button>
+        ))}
+      </div>
+      <div className="keyboard-row">
+        {row3.map((key) => (
+          <button
+            key={key}
+            className={`key ${keyboardFeedback[key] || ""}`}
+            onClick={() => handleKeyClick(key)}
+          >
+            {key}
+          </button>
+        ))}
+        <button className="key del-button" onClick={handleDelete}>
+          Del
+        </button>
       </div>
     </div>
   );

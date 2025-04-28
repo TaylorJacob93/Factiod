@@ -5,9 +5,12 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; 
+  padding-top: 5px; 
+  overflow-y: auto; 
   z-index: 1000;
 }
 
@@ -19,8 +22,9 @@
   max-width: 500px;
   text-align: center;
   position: relative;
+  max-height: 90vh; /* Ensure the modal content doesn't exceed the viewport height */
+ 
 }
-
 .closeButton {
   position: absolute;
   top: 10px;
@@ -28,6 +32,9 @@
   font-size: 20px;
   cursor: pointer;
   transition: color 0.3s ease;
+  background: none;
+  border: none;
+  color: black;
 }
 
 .closeButton:hover {
@@ -38,6 +45,11 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  gap: 5px;
+}
+p {
+  color: black;
+  font-size: 15px;
 }
 
 .howToPlayModal .box {
@@ -48,20 +60,74 @@
   justify-content: center;
   background-color: white;
   border-radius: 5px;
-  color: black;
+  margin: 0 2px;
+}
+
+.showBetterLuckModalBoxGrid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5px;
+}
+
+.showBetterLuckModalBoxGrid .box {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #019a01;
+  border-radius: 5px;
+  color: white;
   font-size: 24px;
   font-weight: bold;
   margin: 0 2px;
 }
-p {
-  font-size: 21px;
+
+.showBetterLuckModalBoxGrid .box .boxLetter {
+  color: white;
+}
+.showCongratsModalBoxGrid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5px;
 }
 
-.howToPlayModal .box.correct {
-  background-color: green;
-  color: black;
+.showCongratsModalBoxGrid .box {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #019a01;
+  border-radius: 5px;
+  color: white !important;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 2px;
+}
+.showCongratsModalBoxGrid .box .boxLetter {
+  color: white;
 }
 
-.howToPlayModal .boxLetter {
-  color: black;
+.howToPlayBoxGrid .box.incorrect {
+  background-color: #858383; /* Gray color for incorrect letters */
+  color: white;
+}
+.howToPlayBoxGrid .box.almost {
+  background-color: #efbc30; /* Orange color for almost correct letters */
+  color: white;
+}
+.howToPlayBoxGrid .box.correct {
+  background-color: #019a01; 
+  color: white; 
+}
+.factList {
+  font-size: 16px;
+  list-style-type: none;
+  margin: 20px auto;
+}
+li{
+  margin: 5px 0;
 }
