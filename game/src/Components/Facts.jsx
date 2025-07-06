@@ -9,22 +9,23 @@ import Modals from "./Modals";
 function Facts() {
   const [selectedFactIndex, setSelectedFactIndex] = useState(null);
   const [showButton, setShowButton] = useState(true);
-  const [inputValues, setInputValues] = useState([]);
-  const [currentInputIndex, setCurrentInputIndex] = useState(0);
+  const [currentGuess, setCurrentGuess] = useState([]);
+  const [pastGuesses, setPastGuesses] = useState([]);
+  const [currentRow, setCurrentRow] = useState(0);
   const [feedbackColors, setFeedbackColors] = useState([]);
   const [displayedFacts, setDisplayedFacts] = useState([]);
   const [showHowToPlay, setShowHowToPlay] = useState(false);
   const [gameStarted, setGameStarted] = useState(false);
   const [showCongratsModal, setShowCongratsModal] = useState(false);
   const [showBetterLuckModal, setShowBetterLuckModal] = useState(false);
-  const [incorrectGuessCount, setIncorrectGuessCount] = useState(0);
   const [showLogo, setShowLogo] = useState(true);
   const [keyboardFeedback, setKeyboardFeedback] = useState({});
+  const MAX_ATTEMPTS = 5;
 
   const getFactOfTheDay = () => {
     const today = new Date();
     const startOfYear = new Date(today.getFullYear(), 0, 1);
-    const dayOfYear = Math.floor((today - startOfYear) / (1000 * 60 * 60 * 24)); // Days since Jan 1
+    const dayOfYear = Math.floor((today - startOfYear) / (1000 * 60 * 60 * 24)); 
     const factIndex = dayOfYear % factInfo.length;
     return factIndex;
   };
@@ -47,7 +48,9 @@ function Facts() {
   }, []);
 
   const selectedFact =
-    selectedFactIndex !== null ? factInfo[selectedFactIndex] : null;
+    selectedFactIndex !== null && factInfo[selectedFactIndex]
+      ? factInfo[selectedFactIndex]
+      : null;
 
   const handleCloseModal = () => {
     setShowHowToPlay(false);
@@ -59,99 +62,172 @@ function Facts() {
     setShowButton(false);
     setShowLogo(false);
 
+    if (!selectedFact) return;
+
     const selectedWord = selectedFact.name.toUpperCase();
-    setInputValues(Array(selectedWord.length).fill(""));
-    setFeedbackColors(Array(selectedWord.length).fill(""));
+
+    setCurrentGuess(Array(selectedWord.length).fill(""));
+    setPastGuesses(
+      Array(MAX_ATTEMPTS - 1)
+        .fill()
+        .map(() => Array(selectedWord.length).fill(""))
+    );
+
+    setFeedbackColors(
+      Array(MAX_ATTEMPTS)
+        .fill()
+        .map(() => Array(selectedWord.length).fill(""))
+    );
+
     setDisplayedFacts([selectedFact.facts[0]]);
-    setCurrentInputIndex(0);
-    setIncorrectGuessCount(0);
+    setCurrentRow(0);
     setKeyboardFeedback({});
   };
 
-  const handleSubmit = useCallback(() => {
-    if (!selectedFact) return;
+  const calculateFeedback = (guess, correctAnswer) => {
+    const feedback = Array(guess.length).fill("");
 
-    const userGuess = inputValues.join("");
+    const letterCounts = {};
+    for (let letter of correctAnswer) {
+      letterCounts[letter] = (letterCounts[letter] || 0) + 1;
+    }
+
+    for (let i = 0; i < guess.length; i++) {
+      if (guess[i] === correctAnswer[i]) {
+        feedback[i] = "correct";
+        letterCounts[guess[i]]--;
+      }
+    }
+
+    for (let i = 0; i < guess.length; i++) {
+      if (feedback[i] === "") {
+        if (letterCounts[guess[i]] && letterCounts[guess[i]] > 0) {
+          feedback[i] = "almost";
+          letterCounts[guess[i]]--;
+        } else {
+          feedback[i] = "incorrect";
+        }
+      }
+    }
+
+    return feedback;
+  };
+
+  const handleSubmit = useCallback(() => {
+    if (!selectedFact || currentGuess.some((letter) => letter === "")) return;
+
+    const userGuess = currentGuess.join("");
     const correctAnswer = selectedFact.name.toUpperCase();
 
+    const newRowFeedback = calculateFeedback(
+      currentGuess,
+      correctAnswer.split("")
+    );
+
+    const newFeedbackColors = [...feedbackColors];
+    newFeedbackColors[currentRow] = newRowFeedback;
+    setFeedbackColors(newFeedbackColors);
+
+    setKeyboardFeedback((prev) => {
+      const updatedFeedback = { ...prev };
+      currentGuess.forEach((letter, index) => {
+        if (!letter) return;
+        const feedback = newRowFeedback[index];
+
+        if (feedback === "correct") {
+          updatedFeedback[letter] = "correct";
+        } else if (
+          feedback === "almost" &&
+          updatedFeedback[letter] !== "correct"
+        ) {
+          updatedFeedback[letter] = "almost";
+        } else if (!updatedFeedback[letter]) {
+          updatedFeedback[letter] = "incorrect";
+        }
+      });
+      return updatedFeedback;
+    });
+
     if (userGuess === correctAnswer) {
-      setFeedbackColors(Array(correctAnswer.length).fill("correct"));
       setShowCongratsModal(true);
+      return;
+    }
+
+    const newPastGuesses = [...pastGuesses];
+    if (currentRow < MAX_ATTEMPTS - 1) {
+      newPastGuesses[currentRow] = [...currentGuess];
+      setPastGuesses(newPastGuesses);
+    }
+
+    const nextRow = currentRow + 1;
+    if (nextRow >= MAX_ATTEMPTS) {
+      setShowBetterLuckModal(true);
     } else {
-      const newFeedbackColors = inputValues.map((letter, index) => {
-        if (letter === correctAnswer[index]) return "correct";
-        if (correctAnswer.includes(letter)) return "almost";
-        return "incorrect";
-      });
+      setCurrentRow(nextRow);
+      setCurrentGuess(Array(correctAnswer.length).fill(""));
 
-      setFeedbackColors(newFeedbackColors);
-
-      setKeyboardFeedback((prev) => {
-        const updatedFeedback = { ...prev };
-        inputValues.forEach((letter, index) => {
-          if (!letter) return; 
-          const feedback = newFeedbackColors[index];
-          if (feedback === "correct") {
-            updatedFeedback[letter] = "correct";
-          } else if (
-            feedback === "almost" &&
-            updatedFeedback[letter] !== "correct"
-          ) {
-            updatedFeedback[letter] = "almost";
-          } else if (!updatedFeedback[letter]) {
-            updatedFeedback[letter] = "incorrect";
-          }
-        });
-        return updatedFeedback;
-      });
-
-      setIncorrectGuessCount((prev) => prev + 1);
-
-      if (incorrectGuessCount >= 4) {
-        setShowBetterLuckModal(true);
-      } else if (displayedFacts.length < selectedFact.facts.length) {
+      if (displayedFacts.length < selectedFact.facts.length) {
         setDisplayedFacts((prev) => [...prev, selectedFact.facts[prev.length]]);
       }
     }
-  }, [inputValues, selectedFact, displayedFacts, incorrectGuessCount]);
+  }, [
+    currentGuess,
+    selectedFact,
+    displayedFacts,
+    currentRow,
+    feedbackColors,
+    pastGuesses,
+  ]);
+
+  const handleEnter = () => {
+    if (!selectedFact || showCongratsModal || showBetterLuckModal) return;
+
+    if (!currentGuess.some((letter) => letter === "")) {
+      handleSubmit();
+    }
+  };
 
   const handleKeyPress = useCallback(
     (event) => {
+      if (!selectedFact || showCongratsModal || showBetterLuckModal) return;
+
       const { key } = event;
+      const correctAnswer = selectedFact.name.toUpperCase();
 
       if (key.length === 1 && /^[a-zA-Z]$/.test(key)) {
-        let indexToInsert = currentInputIndex;
-
-        while (
-          indexToInsert < selectedFact.name.length &&
-          feedbackColors[indexToInsert] === "correct"
-        ) {
-          indexToInsert++;
-        }
-
-        if (indexToInsert < selectedFact.name.length) {
-          setInputValues((prev) => {
-            const newValues = [...prev];
-            newValues[indexToInsert] = key.toUpperCase();
-            return newValues;
-          });
-          setCurrentInputIndex(indexToInsert + 1);
-        }
+        setCurrentGuess((prev) => {
+          const newGuess = [...prev];
+          const emptyIndex = newGuess.findIndex((letter) => letter === "");
+          if (emptyIndex !== -1) {
+            newGuess[emptyIndex] = key.toUpperCase();
+          }
+          return newGuess;
+        });
       } else if (key === "Backspace") {
-        handleDelete();
-      } else if (key === "ArrowLeft") {
-        setCurrentInputIndex((prev) => Math.max(prev - 1, 0));
-      } else if (key === "ArrowRight") {
-        setCurrentInputIndex((prev) =>
-          Math.min(prev + 1, inputValues.length - 1)
-        );
+        setCurrentGuess((prev) => {
+          const newGuess = [...prev];
+
+          for (let i = newGuess.length - 1; i >= 0; i--) {
+            if (newGuess[i] !== "") {
+              newGuess[i] = "";
+              break;
+            }
+          }
+          return newGuess;
+        });
       } else if (key === "Enter") {
-        if (inputValues.every((letter) => letter !== "")) {
+        if (!currentGuess.some((letter) => letter === "")) {
           handleSubmit();
         }
       }
     },
-    [currentInputIndex, inputValues, selectedFact, handleSubmit, feedbackColors]
+    [
+      selectedFact,
+      currentGuess,
+      handleSubmit,
+      showCongratsModal,
+      showBetterLuckModal,
+    ]
   );
 
   useEffect(() => {
@@ -162,32 +238,32 @@ function Facts() {
   }, [handleKeyPress]);
 
   const handleKeyClick = (key) => {
-    if (currentInputIndex < selectedFact.name.length) {
-      setInputValues((prev) => {
-        const newValues = [...prev];
-        if (feedbackColors[currentInputIndex] !== "correct") {
-          newValues[currentInputIndex] = key.toUpperCase();
-        }
-        return newValues;
-      });
-      setCurrentInputIndex((prev) => Math.min(prev + 1, inputValues.length));
-    }
+    if (!selectedFact || showCongratsModal || showBetterLuckModal) return;
+
+    setCurrentGuess((prev) => {
+      const newGuess = [...prev];
+      const emptyIndex = newGuess.findIndex((letter) => letter === "");
+      if (emptyIndex !== -1) {
+        newGuess[emptyIndex] = key.toUpperCase();
+      }
+      return newGuess;
+    });
   };
 
   const handleDelete = () => {
-    let newInputIndex = currentInputIndex - 1;
-    while (newInputIndex >= 0 && feedbackColors[newInputIndex] === "correct") {
-      newInputIndex--;
-    }
+    if (!selectedFact || showCongratsModal || showBetterLuckModal) return;
 
-    if (newInputIndex >= 0) {
-      setInputValues((prev) => {
-        const newValues = [...prev];
-        newValues[newInputIndex] = "";
-        return newValues;
-      });
-      setCurrentInputIndex(newInputIndex);
-    }
+    setCurrentGuess((prev) => {
+      const newGuess = [...prev];
+
+      for (let i = newGuess.length - 1; i >= 0; i--) {
+        if (newGuess[i] !== "") {
+          newGuess[i] = "";
+          break;
+        }
+      }
+      return newGuess;
+    });
   };
 
   return (
@@ -211,12 +287,35 @@ function Facts() {
         )}
       </div>
       {gameStarted && selectedFact && (
-        <div>
-          <WordGrid
-            selectedFact={selectedFact}
-            inputValues={inputValues}
-            feedbackColors={feedbackColors}
-          />
+        <div className="gameContent">
+          <div className="wordGridContainer">
+            {pastGuesses.slice(0, currentRow).map((guess, rowIndex) => (
+              <WordGrid
+                key={`past-${rowIndex}`}
+                inputValues={guess}
+                feedbackColors={feedbackColors[rowIndex]}
+              />
+            ))}
+
+            <WordGrid
+              inputValues={currentGuess}
+              feedbackColors={
+                feedbackColors[currentRow] ||
+                Array(selectedFact.name.length).fill("")
+              }
+            />
+
+            {Array(MAX_ATTEMPTS - currentRow - 1)
+              .fill()
+              .map((_, rowIndex) => (
+                <WordGrid
+                  key={`future-${rowIndex}`}
+                  inputValues={Array(selectedFact.name.length).fill("")}
+                  feedbackColors={Array(selectedFact.name.length).fill("")}
+                />
+              ))}
+          </div>
+
           <ul className="factInfo">
             {displayedFacts.map((fact, index) => (
               <li key={index}>{fact}</li>
@@ -226,6 +325,8 @@ function Facts() {
             <Keyboard
               handleKeyClick={handleKeyClick}
               handleDelete={handleDelete}
+              handleSubmit={handleSubmit}
+              handleEnter={handleEnter}
               keyboardFeedback={keyboardFeedback}
             />
           </div>

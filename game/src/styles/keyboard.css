@@ -1,17 +1,41 @@
+* {
+  max-width: 100%;
+}
+
+.keyboard,
+.keyboard-row,
+.key,
+.del-button,
+.enter-button {
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  touch-action: manipulation; 
+}
+
 .keyboard {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .keyboard-row {
   display: flex;
+  justify-content: center;
   gap: 5px;
 }
 
 .key {
-  padding: 10px 15px;
+  flex: 1;
+  max-width: 50px;
+  height: 50px;
   font-size: 16px;
   text-transform: uppercase;
   border: 1px solid #ccc;
@@ -19,10 +43,13 @@
   background-color: #f0f0f0;
   cursor: pointer;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .key.correct {
-  background-color:#019a01;
+  background-color: #019a01;
   color: white;
 }
 
@@ -36,9 +63,9 @@
   color: white;
 }
 
-.del-button {
-  padding: 10px 15px; 
-  font-size: 16px; 
+.enter-button {
+  padding: 10px 15px;
+  font-size: 16px;
   text-transform: uppercase;
   background-color: #f0f0f0;
   color: black;
@@ -47,12 +74,143 @@
   border-radius: 5px;
   cursor: pointer;
   text-align: center;
-  white-space: nowrap; 
+  white-space: nowrap;
   min-width: 95px;
+}
+.del-button {
+  padding: 10px 15px;
+  font-size: 16px;
+  text-transform: uppercase;
+  background-color: #f0f0f0;
+  color: black;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+  min-width: 70px;
 }
 
 .howToPlayBoxGrid .box.almost {
   background-color: #efd283;
   color: white;
+}
 
+@media (max-width: 768px) {
+  .keyboard {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 5px;
+  }
+
+  .keyboard-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 4px;
+  }
+
+  .enter-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 4px;
+  }
+
+  .key {
+    flex: 1;
+    min-width: 0;
+    height: 55px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    border: 1px solid #ccc;
+    margin: 2px 0;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    touch-action: manipulation;
+  }
+
+  .key:focus,
+  .key:active,
+  .key:hover {
+    background-color: lightgrey;
+    outline: grey;
+  }
+
+  .del-button {
+    flex: 1;
+    height: 55px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    margin: 2px 0;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    user-select: none;
+    touch-action: manipulation;
+  }
+
+  .enter-button {
+    width: 120px;
+    height: 55px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    margin: 2px 0;
+    user-select: none;
+    touch-action: manipulation;
+  }
+}
+
+
+@media (max-width: 400px) {
+  .keyboard {
+    padding: 10px 5px;
+  }
+
+  .keyboard-row {
+    gap: 3px;
+  }
+
+  .key {
+    min-width: 25px;
+    max-width: 40px;
+    height: 40px;
+    font-size: 13px;
+  }
+
+  .del-button {
+    font-size: 11px;
+    min-width: 55px;
+    height: 40px;
+    padding: 6px 10px;
+  }
+  .enter-button {
+    border-radius: 5px;
+    font-size: 14px;
+    min-width: 80px;
+    padding: 8px 12px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .key,
+  .del-button {
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
 }

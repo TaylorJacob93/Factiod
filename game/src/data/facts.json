@@ -22,17 +22,6 @@
     ]
   },
   {
-    "id": 3,
-    "name": "TOOTHBRUSH",
-    "facts": [
-      "It was invented in China during the Tang Dynasty (619-907).",
-      "The world's most expensive costs US$4,000. It's made of titanium. ",
-      "The average person spends a total of 38.5 days of their life using this.",
-      "The ancient Egyptians used twigs and leaves instead of this.",
-      "One in ten people admit they regularly forget to brush their teeth."
-    ]
-  },
-  {
     "id": 4,
     "name": "BALLOON",
     "facts": [

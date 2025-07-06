@@ -3,8 +3,97 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
+  padding: 20px 0;
+}
+
+.gameContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.wordGridContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+
+@keyframes correctReveal {
+  0% {
+    transform: rotateX(0deg);
+    background-color: white;
+  }
+  50% {
+    transform: rotateX(90deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+    background-color: #019a01;
+  }
+}
+
+@keyframes almostReveal {
+  0% {
+    transform: rotateX(0deg);
+    background-color: white;
+  }
+  50% {
+    transform: rotateX(90deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+    background-color: #ffc425;
+  }
+}
+
+@keyframes incorrectReveal {
+  0% {
+    transform: rotateX(0deg);
+    background-color: white;
+  }
+  50% {
+    transform: rotateX(90deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+    background-color: #888;
+  }
+}
+
+.box.correct {
+  border-radius: 5px;
+  animation: correctReveal 0.6s forwards;
+}
+
+.box.almost {
+  border-radius: 5px;
+  animation: almostReveal 0.6s forwards;
+}
+
+.box.incorrect {
+  border-radius: 5px;
+  animation: incorrectReveal 0.6s forwards;
+}
+
+
+.key.correct {
+  background-color: #019a01;
+  color: white;
+}
+
+.key.almost {
+  background-color: #ffc425;
+  color: white;
+}
+
+.key.incorrect {
+  background-color: #888;
+  color: white;
 }
 
 .logo {
@@ -53,9 +142,27 @@
 }
 
 @media (max-width: 768px) {
+  .boxGrid {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+  }
   .factContainer {
-    padding: 20px;
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     height: auto;
+    width: 100%;
+
+    box-sizing: border-box;
+  }
+
+  .boxRow {
+    gap: 1px;
+    margin-bottom: 3px;
   }
 
   .logo {
@@ -64,9 +171,7 @@
     margin-bottom: 20px;
   }
 
-  .playButton,
-  .signUpButton,
-  .howToPlayButton {
+  .playButton {
     width: 100%;
     margin: 10px 0;
     padding: 15px;
@@ -75,25 +180,13 @@
 
   .factInfo li {
     font-size: 18px;
-    padding: 5px;
   }
 
   .box {
     width: 40px;
+    border-radius: 5px;
     height: 40px;
     font-size: 20px;
-  }
-
-  .keyboard-row {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .key {
-    width: 30px;
-    height: 30px;
-    font-size: 0.8rem;
   }
 
   .modal-content,
@@ -109,7 +202,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px 5px;
+  margin: 5px 2px;
 }
 
 .fact {
@@ -122,9 +215,9 @@
   display: flex;
   margin: 5px 2px;
   justify-content: flex-end;
+  border-radius: 5px;
   margin-bottom: 0;
 }
-
 
 .factContainer .box {
   background-color: white;
@@ -132,16 +225,12 @@
   height: 50px;
   border: 1px solid #ccc;
   display: flex;
+  border-radius: 5px;
   align-items: center;
   justify-content: center;
   margin: 0 5px;
   font-size: 24px;
   transition: background-color 0.5s ease;
-}
-
-.factContainer .box.correct {
-  background-color: #008000;
-  animation: colorChange 0.5s forwards;
 }
 
 @keyframes colorChange {
@@ -178,26 +267,8 @@
   font-size: 22px;
 }
 
-.enterButton {
-  background-color: white;
-  border: 2px solid grey;
-  border-radius: 30px;
-  cursor: pointer;
-  display: inline-block;
-  font-weight: bold;
-  font-size: 18px;
-  margin-top: 20px;
-  padding: 0 20px;
-  line-height: 50px;
-  width: 90px;
-}
-
-.enterButton:hover {
-  background-color: rgb(247, 245, 245);
-}
-
 .correct {
-  background-color: #14bb14;
+  background-color: #019a01;
 }
 
 .factName {
@@ -236,11 +307,6 @@
   margin: 0 2px;
   cursor: pointer;
   text-transform: uppercase;
-}
-
-.del-button {
-  width: 55px;
-  height: 40px;
 }
 
 .key:hover {

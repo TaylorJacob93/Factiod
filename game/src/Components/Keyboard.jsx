@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/keyboard.css";
 
-function Keyboard({ handleKeyClick, handleDelete, keyboardFeedback = {} }) {
+function Keyboard({ handleKeyClick, handleEnter, handleDelete, keyboardFeedback = {} }) {
   const row1 = "QWERTYUIOP".split("");
   const row2 = "ASDFGHJKL".split("");
   const row3 = "ZXCVBNM".split("");
@@ -42,6 +42,11 @@ function Keyboard({ handleKeyClick, handleDelete, keyboardFeedback = {} }) {
         ))}
         <button className="key del-button" onClick={handleDelete}>
           Del
+        </button>
+      </div>
+      <div className="keyboard-row enter-row">
+        <button className="enter-button" onClick={handleEnter}>
+          Enter
         </button>
       </div>
     </div>
